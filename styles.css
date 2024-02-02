@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+:root {
+    --a:rgb(48, 36, 36);
+    --b:rgb(0, 0, 0);
+    --c:rgb(3, 12, 80);
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: auto auto;
+    background-image: linear-gradient(to right, rgb(223, 114, 138), rgb(53, 53, 201), rgb(29, 163, 187));
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    height: 190px;
+    width: 250px;
+    transition-duration: 1s;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.3);
+}
+
+.card .img {
+    position: absolute;
+    top: 20px;
+    width: 220px;
+    height: 120px;
+    background-color: black;
+    border-radius: 10px;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content {
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.card .content p {
+    font-size: 0.8rem;
+    width: 90%;
+    margin: auto auto;
+    color: var(--b);
+}
+
+.card .content h2 {
+    color: var(--a);
+}
+
+.card .content a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: cadetblue;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--c);
+}
+
+.card:hover {
+    height: 350px;
+}
+
+.card:hover .img {
+    top: -50px;
+    transform: scale(0.8);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .content {
+    height: 300px ;
+    top: 80px;
+}
+
+
+
+
+
+
+
